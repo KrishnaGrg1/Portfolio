@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+@font-face{
+    font-family:myfont;
+    src: url(font/helavic.ttf);
+    
+}
+@font-face {
+    font-family: warfont;
+    src: url(font/Warzone.ttf);
+}
+body{
+    width: 100 vw;
+    height: 100vh;
+overflow-x: none;
+overflow-y: auto;
+background-color:#F0E0CC;
+color: #4D2D2D;
+}
+header{
+    width: 90%;
+    margin: 0 auto;
+}
+nav{
+    margin-top: 2rem;
+}
+#navlist{
+    width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    gap: 0.625rem;
+    border-radius: 50%;
+}
+.logo img{
+    height: 5rem;
+    border-radius: 20px;
+    filter: drop-shadow(-1px -7px 9px background-color:#F0E0CC;);
+    /* width: 1.938rem; */
+}
+.logo span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+#dark-mode-toggle{
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+#icon{
+   
+    cursor: pointer;
+    /* width: 30px; */
+    height: 1.6rem;
+    border-radius: 100%;
+
+}
+
+#icon:hover{
+    cursor: pointer;
+    
+}
+.name{
+    text-decoration: none;
+    color: black;
+    font-family:sans-serif;
+    font-size: 1.5rem;
+}
+.name:hover{
+    cursor: pointer;
+    
+}
+
+.navitems{
+    display: none;
+    
+    gap: 0.625rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+.navitems a{
+    text-decoration: none;
+    color:#4D2D2D;
+    transition: all 0.1s linear ;
+    text-decoration-color:white ;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+@media (min-width:768px) {
+    .navitems{
+        display: flex;
+        align-items: center;
+      
+       
+    }
+   
+    
+}
+.menu-button{
+    display: none;
+    border:none;
+    border-radius:100%;
+    background-color: var(--background-color);
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width:768px) {
+      .menu-button{
+          display: block;
+        }
+  }
+.navitems a:hover{
+    background-color:black;
+    color: lightblue;
+    border-radius: 15px;
+    padding: 3px; 
+   
+    /* transform: scale(1);
+    /* text-decoration: double; */
+   /* box-shadow: 1px 10px 10px ; */ 
+}
+main{
+    margin-top: 4rem;
+
+}
+
+.contentbox{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction:column ;
+    align-content: space-around;
+    gap: 10px;
+}
+.leftbox-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+.leftbox h1{
+    font-weight: bold;
+    font-size: 3.7rem;
+    font-family: warfont;
+    
+}
+.leftbox span{
+    /* font-weight: bold; */
+    font-style: italic;
+    font-family:serif ;
+    /* font-size: large; */
+}
+#button{
+    /* display: inline-block; */
+    display: flex;
+    width: 183px;
+    
+    padding: 15px 40px;
+    color: #F0E0CC;
+   background-color: #4D2D2D;
+   font-family:serif ;
+    border-radius: 30px;
+    cursor: pointer;
+   
+    text-decoration: none;
+    
+    }
+#button:hover{
+    background-color: black;
+    color: white;
+    /* transform: scale(1.01); */
+    
+}
+.rightbox img{
+    height: 30rem;
+    /* width: 30rem; */
+    transition: all 0.7s linear 0s ;
+    cursor: pointer;
+    border-radius: 100%;
+    
+   
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* CLB35A8593 */
+.socialIcons{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+.socialIcons a{
+    text-decoration: none;
+    /* padding:  10px; */
+    background-color: #F0E0CC;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i {
+    font-size: 2em;
+    color: #4D2D2D; /* Example color for light mode */
+    opacity: 0.9;
+    transition: all 0.1s linear 0s;
+}
+
+.socialIcons a:hover{
+    /* background-color:lightblue; */
+    /* transition: 0.5s; */
+    transform: scale(1.1);
+}
+/* .socialIcons a:hover i{
+    color: black;
+    transition: 0.2s;
+    transform: scale(1.1);
+} */
+@keyframes slideFromLeft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+/* index.css - Your existing CSS styles */
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212; /* Dark background for dark mode */
+    color: #F0E0CC; /* Light text for dark mode */
+    /* Define other dark mode specific styles here */
+}
+
+/* Social Icons Styles for Light Mode */
+
+
+/* Social Icons Styles for Dark Mode */
+.dark-mode .socialIcons a i {
+    color: #F0E0CC; /* Example color for dark mode */
+    /* Add other styles as needed for dark mode */
+    background-color:#121212;
+}
+
+.dark-mode #button{
+    background-color: #F0E0CC;
+    color: #4D2D2D;
+    /* background-color:lightblue; */
+}
+/* Rest of your CSS styles */
+.dark-mode .navitems a{
+    /* background-color: #F0E0CC; */
+    color: #F0E0CC;
+    /* background-color:lightblue; */
+}
+
+.dark-mode .navitems a:hover{
+    background-color: #F0E0CC;
+    color: #4D2D2D;
+    /* background-color:lightblue; */
+}
