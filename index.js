@@ -1,12 +1,17 @@
-// darkmode.js - JavaScript for toggling dark mode
+const toggleButton = document.getElementById('dark-mode-toggle'); // The dark mode toggle button
+const body = document.body;
+let cur="light";
+let icon=document.querySelector('#icon');
 
-// Wait for the DOM to fully load
-document.addEventListener('DOMContentLoaded', (event) => {
-    const toggleButton = document.getElementById('dark-mode-toggle'); // The dark mode toggle button
-    const body = document.body; // The body of the document
 
-    // Listen for a click event on the toggle button
-    toggleButton.addEventListener('click', function() {
-        body.classList.toggle('dark-mode'); // Toggle the 'dark-mode' class on the body
-    });
+toggleButton.addEventListener("click",()=>{
+    if(cur=="light"){
+        body.classList.add('dark-mode');
+        cur="dark";
+        icon.src="sun.png";
+    }else{
+        body.classList.remove('dark-mode');
+        cur="light";
+        icon.src="moon.png";
+    }
 });
