@@ -319,3 +319,214 @@ main {
     background-color: #F0E0CC;
     color: #4D2D2D;
 }
+.dark-mode .contact.section .contact-info p{
+    color: #F0E0CC;
+}
+.dark-mode .contact.section .contact-info i{
+    color: #F0E0CC;
+}
+.dark-mode .contact-form button{
+    background-color: #F0E0CC;
+    color: #4D2D2D; ;
+}
+.dark-mode .contact-form input{
+    background-color: #F0E0CC;
+    color: #4D2D2D; ;
+}
+.dark-mode .contact-form textarea{
+    background-color: #F0E0CC;
+    color: #4D2D2D; ;
+}
+/*================ Contact Me ===============*/
+.contact.section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .contact-info, .contact-form {
+            width: 50%;
+            padding: 20px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact-info h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            font-size: 14px;
+            color: #4D2D2D;
+            margin-bottom: 40px;
+        }
+        .contact-info .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .contact-info .info-item i {
+            font-size: 24px;
+            color: #4D2D2D;
+            margin-right: 15px;
+        }
+        .contact-info .info-item h3 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .contact-info .info-item p {
+            font-size: 14px;
+            color: #4D2D2D;
+            margin: 5px 0 0 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color:#4D2D2D;
+            color: #fff;
+            font-size: 14px;
+        }
+        .contact-form button {
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4D2D2D;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button i {
+            margin-left: 10px;
+        }
+
+
+   
+  /* Footer Styles */
+  
+  /* .footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #222;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__title {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  
+  .footer__links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .footer__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+  
+  .footer__socials {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer__social {
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+  
+  .footer__copy {
+    text-align: center;
+    color: #ccc;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+  
+  
+  .footer__title,
+  .footer__link,
+  .footer__subtitle,
+  .footer__social {
+    color: #fff;
+  } */
+
+
+  .footer {
+    padding: 2rem 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.footer__title {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+
+.footer__links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.3s;
+}
+
+.footer__link:hover {
+    color: #F0E0CC; /* Light color on hover */
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+    margin-right: 2.5rem;
+}
+
+.footer__social {
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+    
+}
+
+.footer__social:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.footer__copy {
+    text-align: center;
+    color: #ccc;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    padding: 1rem 0; /* Add some space above the copyright */
+}
